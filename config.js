@@ -7,11 +7,9 @@ var path = require('path'),
 settings.path = {};
 settings.path.root = path.join.bind(undefined, '.');
 settings.path.lib = settings.path.root.bind(undefined, "lib");
-settings.path.www = settings.path.root.bind(undefined, "www");
-settings.path.www.public = settings.path.www.bind(undefined, 'public');
 
 settings.file({
-    file: settings.path.www("settings.cjson"),
+    file: settings.path.root("settings.cjson"),
     format: {
         stringify: function (obj, replacer, spacing) {
             return JSON.stringify(obj, replacer || null, spacing || 2);
@@ -23,7 +21,7 @@ settings.file({
 settings.load();
 settings.set("redis:url", process.env.REDIS_URL || settings.get('redis:url'));
 settings.set("env", process.env.NODE_ENV || 'local');
-settings.set("www:port", process.env.PORT || 8080);
+settings.set("server:port", process.env.PORT || 8080);
 
 // Prefix
 

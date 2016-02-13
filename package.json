@@ -1,0 +1,34 @@
+{
+  "name": "keet",
+  "version": "0.0.1",
+  "description": "Trigger emails",
+  "main": "app.js",
+  "scripts": {
+    "dev": "NODE_PATH=. gulp dev",
+    "start": "NODE_PATH=. node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prokilogrammer/keet.git"
+  },
+  "author": "Sanath Kumar Ramesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prokilogrammer/keet/issues"
+  },
+  "homepage": "https://github.com/prokilogrammer/keet#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "cjson": "^0.3.3",
+    "commander": "^2.9.0",
+    "nconf": "^0.8.4",
+    "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6"
+  },
+  "engine": {
+    "node": "5.5.0"
+  }
+}

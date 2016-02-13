@@ -1,13 +1,4 @@
 {
-    "www": {
-        "port": 8080,
-
-        // All file paths must be relative to root of the app
-        "staticDir": "www/public/static",
-        "viewsDir": "www/views",
-        "favicon": "www/public/static/favicon.ico"
-    },
-
     "redis": {
         "url": "redis://localhost:6379"
     }
