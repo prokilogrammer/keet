@@ -1,4 +1,8 @@
 {
+    "versions": {
+        // Semver version number for API
+        "alpha": ["0.0.1"]
+    },
     "redis": {
         "url": "redis://localhost:6379"
     }
