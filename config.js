@@ -18,8 +18,11 @@ settings.file({
     }
 });
 
+var env = process.env.NODE_ENV || 'local';
+
 settings.load();
 settings.set("redis:url", process.env.REDIS_URL || settings.get('redis:url'));
+settings.set("db:main:"+env, process.env.MONGODB_URL || settings.get("db:main:"+env));
 settings.set("env", process.env.NODE_ENV || 'local');
 settings.set("server:port", process.env.PORT || 8080);
 

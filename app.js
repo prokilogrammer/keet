@@ -20,7 +20,12 @@ server.use(restify.requestLogger());
 var db = null;
 async.waterfall([
     function(cb){
-        db = require(settings.path.lib('db'))(settings, cb)
+        require(settings.path.lib('db'))(settings, function(err, models){
+            if (err) return cb(err);
+
+            db = models;
+            cb();
+        })
     },
     function(cb){
         // Require the routes

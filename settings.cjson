@@ -5,6 +5,14 @@
     },
     "redis": {
         "url": "redis://localhost:6379"
+    },
+
+    "db": {
+        "main": {
+            "local": "mongodb://127.0.0.1:27017/keet_local",
+            "development": "mongodb://127.0.0.1:27017/keet_dev",
+            "production": "mongodb://127.0.0.1:27017/keet_prod"
+        }
     }
 
 }

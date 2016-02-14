@@ -18,12 +18,16 @@
   },
   "homepage": "https://github.com/prokilogrammer/keet#readme",
   "dependencies": {
+    "agenda": "^0.7.9",
     "async": "^1.5.2",
     "bunyan": "^1.6.0",
     "cjson": "^0.3.3",
     "commander": "^2.9.0",
+    "lodash": "^4.3.0",
+    "mongoose": "^4.4.3",
     "nconf": "^0.8.4",
-    "restify": "^4.0.4"
+    "restify": "^4.0.4",
+    "stormpath": "^0.17.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
